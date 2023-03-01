@@ -1,0 +1,218 @@
+<html>
+  <title>MVIT Examination results </title>
+    <link rel="icon" href="E:\mvit results\download.jpeg" type="image/x-icon">
+<head>
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+       body {
+         margin: 0;
+        }
+        h1{text-align: center;}
+        .header {
+        background-color: hsl(0, 0%, 96%);
+        padding: 10px;
+        text-align: left;
+        }
+        .footer {
+        background-color: hsl(0, 0%,96%);
+        text-align: center;
+        padding: 10px;
+         
+    
+        }
+        body {
+         margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .topnav {
+         overflow: hidden;
+        background-color: #190466;
+        }
+
+        .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        }
+
+        .topnav a:hover {
+        background-color: #fffefe;
+        color: black;
+        }
+        
+
+/* Create a right-aligned (split) link inside the navigation bar */
+        .topnav a.split {
+        float: right;
+        background-color: #ca0101;
+        color: rgb(242, 242, 242);
+        }
+        .topadmin b.art {
+            float: left;
+            background-color: #190466;
+            color: #f2f2f2;
+
+        }
+        .dropdown {
+        float: left;
+        overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+        font-size: 16px;  
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+        }
+
+        .navbar a:hover, .dropdown:hover .dropbtn {
+        background-color: rgb(255, 255, 255);
+        color: black;
+        }
+
+        .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        }
+
+        .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        }
+
+        .dropdown-content a:hover {
+        background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+        display: block;
+        }
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 0px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 50%;
+  padding: 5px 10px;
+  margin: 4px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  width:30%;
+ 
+}
+
+button {
+  background-color: #190466;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 5px 9px;
+  background-color: #f44336;
+  
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 12px 0 6px 0;
+  padding: 10px;
+  
+  
+}
+
+img.avatar {
+  width: 20%;
+  border-radius: 25%;
+}
+
+.container {
+  padding: 8px;
+  text-align: center;
+}
+
+span.psw {
+  float: right;
+  padding-top: 8px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 150px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 50%;
+  }
+}
+</style>
+</head>
+<body>
+  <div class="header">
+    <img  src="E:\mvit results\MVIT-logo2.png"width="300" height="80" >
+    </div>
+    <div class="topnav">
+        <a class="active" href="file:///E:/mvit%20results/index.html">Dashboard</a>
+         
+        <a href="E:\mvit results\login.html" class="split">Admin</a>
+        <a href="https://signin.aws.amazon.com/signin?redirect_uri=https%3A%2F%2Fconsole.aws.amazon.com%2Fconsole%2Fhome%3FhashArgs%3D%2523%26isauthcode%3Dtrue%26nc2%3Dh_ct%26src%3Dheader-signin%26state%3DhashArgsFromTB_ap-northeast-1_33a729f543ab4dfa&client_id=arn%3Aaws%3Asignin%3A%3A%3Aconsole%2Fcanvas&forceMobileApp=0&code_challenge=SrRYqqdc3Inb4WPEXL-vRhlESm8g7TJz-CEJziyWODc&code_challenge_method=SHA-256" class="split">Cloud Adminstration</a>
+       
+      </div>
+
+<h1 style="text-align:center;">Admin Login</h1>
+
+<form action="/action_page.php" method="post">
+  <div class="imgcontainer">
+    
+    <img src="E:\mvit results\group_logo.png" alt="Avatar" class="avatar">
+  </div>
+  
+
+  <div class="container" justify-center>
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required><br>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required><br>
+        
+    <button type="submit">Login</button><br>
+    <label>
+      <input type="checkbox" name="remember"> Remember me
+    </label>
+  </div>
+
+  
+</form>
+<div class="footer">
+  <h4 style="font-family:Calibri Black; color:rgb(96, 95, 95);">@2023 Manakula Vinayagar Institute Of Technology, Puducherry</h4>
+</div>
+
+
+</body>
+</html>
