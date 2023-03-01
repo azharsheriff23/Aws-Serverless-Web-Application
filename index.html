@@ -1,0 +1,378 @@
+<html>
+    <head>
+    <title>MVIT Examination results </title>
+    <link rel="icon" href="E:\mvit results\download.jpeg" type="image/x-icon">
+    <style>
+        body {
+         margin: 0;
+        }
+        h1{text-align: center;}
+        .header {
+        background-color: hsl(0, 0%, 96%);
+        padding: 10px;
+        text-align: left;
+        }
+        .footer {
+        background-color: #fffbfb;
+        text-align: center;
+         padding: 10px;
+        }
+        body {
+         margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #topnav {
+         overflow: hidden;
+        background-color: #190466;
+        }
+
+        #topnav a {
+        float: left;
+        color: #ffffff;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        }
+
+        #topnav a:hover {
+        background-color: #fffefe;
+        color: black;
+        }
+        #topnav a.use {
+        color: rgb(255, 255, 255);
+        }
+
+        .content {
+        padding: 0px;
+        }
+
+        .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        }
+
+        .sticky + .content {
+        padding-top: 60px;
+        }
+        
+
+/* Create a right-aligned (split) link inside the navigation bar */
+        #topnav a.split {
+        float: right;
+        background-color: #ca0101;
+        color: rgb(242, 242, 242);
+        }
+        #topadmin b.art {
+            float: left;
+            background-color: #190466;
+            color: #f2f2f2;
+
+        }
+        .dropdown {
+        float: left;
+        overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+        font-size: 16px;  
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+        }
+
+        .navbar a:hover, .dropdown:hover .dropbtn {
+        background-color: rgb(255, 255, 255);
+        color: black;
+        }
+
+        .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        }
+
+        .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        }
+
+        .dropdown-content a:hover {
+        background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+        display: block;
+        }
+        #date {
+         font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        }
+
+        #date td, #date th {
+        border: 0.5px solid #fffefe;
+        padding: 8px;
+        }
+
+        #date tr:nth-child(even){background-color: #f2f2f2;}
+
+        #date tr:hover {background-color: #ddd;}
+
+        #date th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: center;
+        background-color: #190466;
+        color: white;
+        }
+        
+
+
+        #time {
+         font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 40%;
+        }
+
+        #time td, #time th {
+        border: 0.5px solid #fffefe;
+        padding: 8px;
+        }
+
+        #time tr:nth-child(even){background-color: #f2f2f2;}
+
+        #time tr:hover {background-color: #ddd;}
+
+        #time th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #3904b4;
+        color: white;
+        }
+    </style>
+    </head>
+    
+        <body>
+            
+            <div class="header">
+            <img  src="E:\mvit results\MVIT-logo2.png"width="300" height="80" >
+            </div>
+            <div id="topnav">
+                <a class="active" href="file:///E:/mvit%20results/index.html">Dashboard</a>
+                
+                <div class="dropdown">
+                    <button class="dropbtn">Anouncements!
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <p>NO Updates</p>
+                    </div>
+                  </div> 
+                <a href="E:\mvit results\login.html" class="split">Admin</a>
+                <a href="https://signin.aws.amazon.com/signin?redirect_uri=https%3A%2F%2Fconsole.aws.amazon.com%2Fconsole%2Fhome%3FhashArgs%3D%2523%26isauthcode%3Dtrue%26nc2%3Dh_ct%26src%3Dheader-signin%26state%3DhashArgsFromTB_ap-northeast-1_33a729f543ab4dfa&client_id=arn%3Aaws%3Asignin%3A%3A%3Aconsole%2Fcanvas&forceMobileApp=0&code_challenge=SrRYqqdc3Inb4WPEXL-vRhlESm8g7TJz-CEJziyWODc&code_challenge_method=SHA-256" class="split">Cloud Adminstration</a>
+                <a href="#getresults">Get Results</a>
+            </div>
+
+            
+            
+            <h1 style="font-family:Arial Black; color:rgb(255, 0, 0);">Controller of Examinations</h1>
+            <h3 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: #7a01ca;">  Following course provisional results are available:-</h3>
+            <table id="date">
+                <tr>
+                    <th>Degree</th>
+                    <th>Department</th>
+                    <th>Reference</th>
+                    <th>Batch</th>
+                    <th>Exam</th>
+                    <th>Result Date</th>
+                </tr>
+                <tr>
+                    <td>B.tech</td>
+                    <td>CSE</td>
+                    <td>Computer Science Engineering</td>
+                    <td>2019-2023</td>
+                    <td>VII Semester</td>
+                    <td>20.10.2022</td>
+                </tr>
+                <tr>
+                    <td>B.tech</td>
+                    <td>FT</td>
+                    <td>Food Technology</td>
+                    <td>2020-2024</td>
+                    <td>IV Semester</td>
+                    <td>23.07.2021</td>
+                </tr>
+                <tr>
+                    <td>B.tech</td>
+                    <td>AI/ML</td>
+                    <td>Aritifical Inteligence</td>
+                    <td>2021-2025</td>
+                    <td>II Semester</td>
+                    <td>16.04.2022</td>
+                </tr>
+                <tr>
+                    <td>B.tech</td>
+                    <td>IOT</td>
+                    <td>Internet Of Things</td>
+                    <td>2019-2023</td>
+                    <td>VI Semester</td>
+                    <td>20.10.2022</td>
+                </tr>
+                <tr>
+                    <td>B.tech</td>
+                    <td>RB</td>
+                    <td>Robotics</td>
+                    <td>2019-2023</td>
+                    <td>VII Semester</td>
+                    <td>20.10.2022</td>
+                </tr>
+                <tr>
+                    <td>B.tech</td>
+                    <td>Mech</td>
+                    <td>Mechnical Engineering</td>
+                    <td>2019-2023</td>
+                    <td>VII Semester</td>
+                    <td>20.10.2022</td>
+                </tr>
+                <tr>
+                    <td>B.tech</td>
+                    <td>CSE</td>
+                    <td>Computer Science Engineering</td>
+                    <td>2019-2023</td>
+                    <td>VII Semester</td>
+                    <td>20.10.2022</td>
+                </tr>
+                <tr>
+                    <td>B.tech</td>
+                    <td>ECE</td>
+                    <td>Elecetornics & Communication Engineering</td>
+                    <td>2019-2023</td>
+                    <td>VII Semester</td>
+                    <td>20.10.2022</td>
+                </tr>
+                <tr>
+                    <td>B.tech</td>
+                    <td>CSE</td>
+                    <td>Computer Science Engineering</td>
+                    <td>2019-2023</td>
+                    <td>VII Semester</td>
+                    <td>20.10.2022</td>
+                </tr>
+                <tr>
+                    <td>B.tech</td>
+                    <td>IT</td>
+                    <td>Information Technology Engineering</td>
+                    <td>2019-2023</td>
+                    <td>VII Semester</td>
+                    <td>20.10.2022</td>
+                </tr>
+                
+               
+                <tr>
+                    <td>B.tech</td>
+                    <td>CSE</td>
+                    <td>Computer Science Engineering</td>
+                    <td>2019-2023</td>
+                    <td>VII Semester</td>
+                    <td>20.10.2022</td>
+                </tr>
+                <tr>
+                    <td>B.tech</td>
+                    <td>CSE</td>
+                    <td>Computer Science Engineering</td>
+                    <td>2019-2023</td>
+                    <td>VII Semester</td>
+                    <td>20.10.2022</td>
+                </tr>
+                
+                <tr>
+                    <td>B.tech</td>
+                    <td>CSE</td>
+                    <td>Computer Science Engineering</td>
+                    <td>2019-2023</td>
+                    <td>VII Semester</td>
+                    <td>20.10.2022</td>
+                </tr>
+                <tr>
+                    <td>B.tech</td>
+                    <td>CSE</td>
+                    <td>Elecetornics & Communication Engineering</td>
+                    <td>2020-2021</td>
+                    <td>V Semester</td>
+                    <td>16.11.2022</td>
+                </tr>
+                <tr>
+                    <td>M.tech</td>
+                    <td>CSE</td>
+                    <td>Computer Science Engineering</td>
+                    <td>2019-2023</td>
+                    <td>III Semester</td>
+                    <td>20.09.2022</td>
+                </tr>
+                <tr>
+                    <td>B.tech</td>
+                    <td>IT</td>
+                    <td>Information Technology Engineering</td>
+                    <td>2019-2023</td>
+                    <td>VII Semester</td>
+                    <td>21.10.2022</td>
+                </tr>
+                <tr>
+                    <td>B.tech</td>
+                    <td>CSE</td>
+                    <td>Computer Science Engineering</td>
+                    <td>2019-2023</td>
+                    <td>VI Semester</td>
+                    <td>20.10.2021</td>
+                </tr>
+            </table>
+            <h3 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: #d70909;"> Schedule For Upcoming Exams:-</h3>
+            <table id="time">
+                <tr>
+                    <th>Exam Allotments</th>                    
+                </tr>
+                <tr>
+                    <td>Even Semester exams July-2023</td>
+                    
+                </tr>
+                <tr>
+                    <td>odd semester exams December-2022</td>
+                </tr>
+            </table>
+            <div class="footer">
+                <h4 style="font-family:Calibri Black; color:rgb(96, 95, 95);">@2023 Manakula Vinayagar Institute Of Technology, Puducherry</h4>
+            </div>
+            <script>
+                window.onscroll = function() {myFunction()};
+                
+                var topnav = document.getElementById("topnav");
+                var sticky = topnav.offsetTop;
+                
+                function myFunction() {
+                  if (window.pageYOffset >= sticky) {
+                    topnav.classList.add("sticky")
+                  } else {
+                    topnav.classList.remove("sticky");
+                  }
+                }
+                </script>
+                
+    
+        </body>
+
+</html>
